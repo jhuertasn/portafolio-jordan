@@ -1,51 +1,137 @@
 ---
 ---
-<section id="proyectos" class="py-16">
-  <h2 class="text-3xl font-bold mb-8 text-slate-200">Proyectos Recientes</h2>
+<section id="proyectos" class="py-16 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold mb-8 text-slate-900 flex items-center gap-3">
+    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+    </svg>
+    Proyectos Recientes
+  </h2>
   
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    
-    <article class="flex flex-col space-y-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
-      <div class="w-full h-48 bg-slate-100 rounded-xl overflow-hidden border border-slate-100">
-        <img src="https://via.placeholder.com/600x400/e2e8f0/64748b?text=Captura+del+Proyecto" alt="Habita AI" class="w-full h-full object-cover" />
+
+    <!-- Comparador de Precios -->
+    <article class="flex flex-col bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-indigo-200 transition-all overflow-hidden">
+      <div class="w-full h-48 overflow-hidden relative group">
+        <img 
+          src="/projects/comparador-precios.jpeg" 
+          alt="Comparador de Precios" 
+          class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+        />
       </div>
-      <h3 class="text-xl font-bold text-slate-800">Habita AI</h3>
-      <p class="text-slate-600 text-sm flex-1 leading-relaxed">
-        Plataforma y flujo de trabajo estructurado para optimización de procesos. Desarrollo del modelo de negocio y arquitectura lógica de la aplicación.
-      </p>
-      <ul class="flex flex-wrap gap-2 mb-2">
-        <li><span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">Astro</span></li>
-        <li><span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">Tailwind</span></li>
-      </ul>
-      <div class="flex gap-4 mt-4 pt-2 border-t border-slate-100">
-        <a href="#" class="text-sm font-semibold text-slate-700 hover:text-blue-600 flex items-center gap-1 transition">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-          Código
-        </a>
-        <a href="#" class="text-sm font-semibold text-slate-700 hover:text-blue-600 flex items-center gap-1 transition">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-          Demo
-        </a>
+      <div class="flex flex-col flex-1 p-6 space-y-3">
+        <h3 class="text-xl font-bold text-slate-800">Comparador de Precios</h3>
+        <p class="text-slate-600 text-sm flex-1 leading-relaxed">
+          Extensión de Chrome con Web Scraping para comparar precios en tiempo real entre Falabella y Mercado Libre. Incluye dashboard con análisis estadístico, detección de outliers y gráficos comparativos.
+        </p>
+        <ul class="flex flex-wrap gap-2">
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">TypeScript</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Vite</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Chart.js</span></li>
+        </ul>
+        <div class="pt-4 border-t border-slate-100">
+          <a href="https://github.com/jhuertasn/krowdy-reto1-comparador-precios" target="_blank"
+            class="inline-flex items-center gap-2 bg-slate-800 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-slate-700 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+            Ver código
+          </a>
+        </div>
       </div>
     </article>
 
-    <article class="flex flex-col space-y-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
-      <div class="w-full h-48 bg-slate-100 rounded-xl overflow-hidden border border-slate-100">
-        <img src="https://via.placeholder.com/600x400/e2e8f0/64748b?text=Script+de+Redes" alt="Automatización de Inventario IT" class="w-full h-full object-cover" />
+    <!-- EcoPoints -->
+    <article class="flex flex-col bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-indigo-200 transition-all overflow-hidden">
+      <div class="w-full h-48 overflow-hidden relative group">
+        <img 
+          src="/projects/ecopoints.jpeg" 
+          alt="EcoPoints" 
+          class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+        />
       </div>
-      <h3 class="text-xl font-bold text-slate-800">Automatización de Inventario IT</h3>
-      <p class="text-slate-600 text-sm flex-1 leading-relaxed">
-        Script diseñado para auditoría y control de calidad de equipos informáticos en red, agilizando el mantenimiento preventivo y el soporte técnico.
-      </p>
-      <ul class="flex flex-wrap gap-2 mb-2">
-        <li><span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Python</span></li>
-        <li><span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">Bash</span></li>
-      </ul>
-      <div class="flex gap-4 mt-4 pt-2 border-t border-slate-100">
-        <a href="#" class="text-sm font-semibold text-slate-700 hover:text-blue-600 flex items-center gap-1 transition">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-          Código
-        </a>
+      <div class="flex flex-col flex-1 p-6 space-y-3">
+        <h3 class="text-xl font-bold text-slate-800">EcoPoints – Plataforma de Reciclaje</h3>
+        <p class="text-slate-600 text-sm flex-1 leading-relaxed">
+          Arquitectura de microservicios orientada a eventos para gestionar el ciclo de vida del reciclaje. Sistema desacoplado y asíncrono para garantizar escalabilidad en tiempo real.
+        </p>
+        <ul class="flex flex-wrap gap-2">
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">React</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Spring Boot</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Docker</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">RabbitMQ</span></li>
+        </ul>
+        <div class="pt-4 border-t border-slate-100">
+          <a href="https://github.com/jhuertasn/proyecto-ecopoints" target="_blank"
+            class="inline-flex items-center gap-2 bg-slate-800 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-slate-700 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+            Ver código
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- EvaluaApp -->
+    <article class="flex flex-col bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-indigo-200 transition-all overflow-hidden">
+      <div class="w-full h-48 overflow-hidden relative group">
+        <img 
+          src="/projects/evaluaapp.jpeg" 
+          alt="EvaluaApp" 
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+      <div class="flex flex-col flex-1 p-6 space-y-3">
+        <h3 class="text-xl font-bold text-slate-800">EvaluaApp</h3>
+        <p class="text-slate-600 text-sm flex-1 leading-relaxed">
+          Plataforma web para la gestión de evaluaciones académicas. Permite la creación de clases, carga de exámenes mediante Excel y gestión de rúbricas de coevaluación.
+        </p>
+        <ul class="flex flex-wrap gap-2">
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Java 17</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Node.js</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">MySQL</span></li>
+        </ul>
+        <div class="pt-4 border-t border-slate-100">
+          <a href="https://github.com/jhuertasn/tesis-sistema-rubricas" target="_blank"
+            class="inline-flex items-center gap-2 bg-slate-800 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-slate-700 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+            Ver código
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Reproductor Inteligente -->
+    <article class="flex flex-col bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:border-indigo-200 transition-all overflow-hidden">
+      <div class="w-full h-48 overflow-hidden relative group">
+        <img 
+          src="/projects/reproductor-video.jpeg" 
+          alt="Reproductor Inteligente de Video" 
+          class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+      <div class="flex flex-col flex-1 p-6 space-y-3">
+        <h3 class="text-xl font-bold text-slate-800">Reproductor Inteligente de Video</h3>
+        <p class="text-slate-600 text-sm flex-1 leading-relaxed">
+          Reproductor avanzado para análisis de entrevistas con etiquetas temporales dinámicas y salto automático de intervalos irrelevantes mediante tiempo virtual.
+        </p>
+        <ul class="flex flex-wrap gap-2">
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">React</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">Custom Hooks</span></li>
+          <li><span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span></li>
+        </ul>
+        <div class="pt-4 border-t border-slate-100">
+          <a href="https://github.com/jhuertasn/Reto-2-reproductor-entrevista-krowdy2026" target="_blank"
+            class="inline-flex items-center gap-2 bg-slate-800 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-slate-700 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+            Ver código
+          </a>
+        </div>
       </div>
     </article>
 
