@@ -1,31 +1,111 @@
 ---
 ---
-<section id="mi-stack" class="py-16">
-  <h2 class="text-3xl font-bold mb-8 text-slate-200">Tecnologías</h2>
+<section id="tecnologias" class="py-16 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold mb-12 text-slate-900 flex items-center gap-3">
+    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+    Tecnologías y Herramientas
+  </h2>
   
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     
-    <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-      <h3 class="text-xl font-bold text-blue-600 mb-6 text-center">Frontend</h3>
-      <div class="grid grid-cols-3 gap-y-6 gap-x-4 text-center">
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">HTML</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">CSS</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">JavaScript</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">Tailwind</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">Astro</span></div>
+    <article class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-100 transition-all hover:shadow-indigo-50 hover:border-indigo-100">
+      <h3 class="text-xl font-bold text-indigo-600 mb-8 flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+        Backend & Databases
+      </h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-y-8 gap-x-4 text-center">
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Java</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Spring</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Node.js</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Python</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL / MariaDB" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">MySQL</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Postgre</span>
+        </div>
       </div>
     </article>
 
-    <article class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-      <h3 class="text-xl font-bold text-blue-600 mb-6 text-center">Soporte & Herramientas</h3>
-      <div class="grid grid-cols-3 gap-y-6 gap-x-4 text-center">
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">Linux</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">Windows Server</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">Python</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">Git</span></div>
-        <div class="flex flex-col items-center gap-2"><div class="w-12 h-12 bg-slate-100 rounded-xl"></div><span class="text-sm font-medium text-slate-700">GitHub</span></div>
+    <article class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-100 transition-all hover:shadow-indigo-50 hover:border-indigo-100">
+      <h3 class="text-xl font-bold text-indigo-600 mb-8 flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        Soporte, OS & Infraestructura
+      </h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-y-8 gap-x-4 text-center">
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Linux</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Docker</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Server / OS" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Windows</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">Git</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash Scripting" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">Bash</span>
+          </div>
+        <div class="flex flex-col items-center gap-3 group">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ (Microservicios)" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+          <span class="text-xs font-medium text-slate-700">RabbitMQ</span>
+        </div>
       </div>
     </article>
+
+    <article class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-100 transition-all hover:shadow-indigo-50 hover:border-indigo-100 md:col-span-2">
+        <h3 class="text-xl font-bold text-indigo-600 mb-8 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 21h6l-.75-4M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          Frontend & Diseño Web
+        </h3>
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-y-8 gap-x-4 text-center">
+          <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">React</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" alt="Astro" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">Astro</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">Tailwind</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">JavaScript</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">Vite</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 group">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma (Diseño)" class="w-12 h-12 group-hover:scale-110 transition-transform" />
+            <span class="text-xs font-medium text-slate-700">Figma</span>
+          </div>
+        </div>
+      </article>
 
   </div>
 </section>
