@@ -4,15 +4,17 @@ import Hero from '../components/Hero.astro';
 import Experience from '../components/Experience.astro';
 import Projects from '../components/Projects.astro';
 import Technologies from '../components/Technologies.astro';
+import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Jordan Angel - Soporte Técnico y Desarrollo">
-	<main class="max-w-4xl mx-auto px-4 mt-10">
-        <Hero />
-        <Experience />
-        <Projects />
-        <Technologies />
-	</main>
-    <Footer />
+  <main id="top" class="max-w-4xl mx-auto px-4 mt-10">
+    <Hero />
+    <Experience />
+    <Projects />
+    <About />
+    <Technologies />
+  </main>
+  <Footer />
 </Layout>

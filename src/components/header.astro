@@ -1,11 +1,35 @@
 ---
 ---
-<header class="flex justify-between items-center py-5 w-full max-w-4xl mx-auto px-4">
-  <span class="text-xl font-bold text-blue-600">Jordan Angel</span>
-  <nav class="flex flex-row gap-x-6 opacity-80 text-sm font-medium">
-    <a href="#top" class="hover:text-blue-600 transition">Sobre mí</a>
-    <a href="#experiencia" class="hover:text-blue-600 transition">Experiencia</a>
-    <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
-     <a href="#mi-stack" class="hover:text-blue-600 transition">Mi stack</a>
-  </nav>
+
+<header 
+  id="main-header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5"
+>
+  <div class="max-w-4xl mx-auto px-4 flex justify-between items-center">
+    <span class="text-xl font-bold text-indigo-600 font-['Outfit'] transition-all duration-300" id="header-name">
+      Jordan Huertas
+    </span>
+    <nav class="flex flex-row gap-x-6 text-sm font-medium">
+      <a href="#experiencia" class="text-slate-600 hover:text-indigo-600 transition">Experiencia</a>
+      <a href="#proyectos"   class="text-slate-600 hover:text-indigo-600 transition">Proyectos</a>
+      <a href="#sobre-mi"    class="text-slate-600 hover:text-indigo-600 transition">Sobre mí</a>
+      <a href="#mi-stack"    class="text-slate-600 hover:text-indigo-600 transition">Mi stack</a>
+    </nav>
+  </div>
 </header>
+
+<div class="h-20"></div>
+
+<script>
+  const header = document.getElementById('main-header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      header?.classList.add('bg-white/95', 'backdrop-blur-sm', 'shadow-sm', 'py-3');
+      header?.classList.remove('py-5');
+    } else {
+      header?.classList.remove('bg-white/95', 'backdrop-blur-sm', 'shadow-sm', 'py-3');
+      header?.classList.add('py-5');
+    }
+  });
+</script>
